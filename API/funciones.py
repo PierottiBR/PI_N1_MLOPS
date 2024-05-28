@@ -6,13 +6,13 @@ import re
 from sklearn.metrics.pairwise import cosine_similarity
 import traceback
 
-df_steam_games = pd.read_csv(r"datasets\steamgames.csv")
+df_steam_games = pd.read_csv(os.path.join("datasets","steamgames.csv"))
 
-df_user_reviews = pd.read_csv(r"datasets\userreviews.csv")
+df_user_reviews = pd.read_csv(os.path.join("datasets","userreviews.csv"))
 
-df_user_items= pd.read_csv(r"datasets\useritems.csv")
+df_user_items= pd.read_csv(os.path.join("datasets","useritems.csv"))
 
-df_reviews_limpio = pd.read_csv(r'datasets\reviews_limpio.csv')
+df_reviews_limpio = pd.read_csv(os.path.join("datasets","reviews_limpio.csv"))
 
 #UserForGenre Funcion
 def UserForGenre(genero):
